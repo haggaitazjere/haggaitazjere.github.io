@@ -13,6 +13,27 @@ body {
     color: #e2e8f0;
 }
 
+/* NAVBAR */
+nav {
+    background: #020617;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+nav a {
+    color: #38bdf8;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* HEADER */
 header {
     text-align: center;
     padding: 60px 20px;
@@ -23,6 +44,7 @@ h1 {
     font-size: 45px;
 }
 
+/* SECTIONS */
 section {
     padding: 40px 20px;
     max-width: 900px;
@@ -53,6 +75,17 @@ a {
     text-decoration: none;
 }
 
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 8px;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
@@ -63,64 +96,68 @@ footer {
 
 <body>
 
-<header>
+<!-- NAVBAR -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HEADER -->
+<header id="home">
     <h1>Haggai Jere 👋</h1>
     <p>Software Engineer | Java | Android Developer</p>
-    <p>I build mobile and desktop applications with clean design and strong functionality.</p>
+    <a href="#projects" class="btn">View My Work</a>
 </header>
 
-<section>
+<!-- ABOUT -->
+<section id="about">
     <h2>👨‍💻 About Me</h2>
     <div class="card">
         <p>
-            I am a passionate Software Engineer with experience in Java and Android development.
-            I enjoy building systems that solve real-world problems such as student management
-            and healthcare appointment scheduling.
+            I am a passionate Software Engineer specializing in Java and Android development.
+            I build systems that solve real-world problems in education and healthcare.
         </p>
     </div>
 </section>
 
-<section>
+<!-- SKILLS -->
+<section id="skills">
     <h2>🛠 Skills</h2>
     <div class="card skills">
         <span>Java</span>
-        <span>Android Development</span>
+        <span>Android</span>
         <span>SQLite</span>
-        <span>Database Design</span>
         <span>OOP</span>
-        <span>Git & GitHub</span>
+        <span>GitHub</span>
     </div>
 </section>
 
-<section>
+<!-- PROJECTS -->
+<section id="projects">
     <h2>🚀 Projects</h2>
 
     <div class="card">
         <h3>Twapia Clinic Appointment System</h3>
-        <p>
-            A Java-based application that allows patients to schedule appointments efficiently.
-            Includes time management, patient tracking, and system notifications.
-        </p>
+        <p>Manages patient appointments using Java.</p>
     </div>
 
     <div class="card">
         <h3>Student Performance System</h3>
-        <p>
-            A system designed to track and analyze student academic performance using structured data.
-        </p>
+        <p>Tracks student academic performance.</p>
     </div>
 
     <div class="card">
-        <h3>Android Mobile Apps</h3>
-        <p>
-            Developed multiple Android applications using intents, activities, SQLite database,
-            and user-friendly interfaces.
-        </p>
+        <h3>Android Apps</h3>
+        <p>Built multiple mobile apps using SQLite and intents.</p>
     </div>
 
 </section>
 
-<section>
+<!-- CONTACT -->
+<section id="contact">
     <h2>📞 Contact</h2>
     <div class="card">
         <p>Email: your-email@example.com</p>
@@ -128,8 +165,9 @@ footer {
     </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-    © 2026 Haggai Jere | Professional Portfolio
+    © 2026 Haggai Jere | Portfolio
 </footer>
 
 </body>
