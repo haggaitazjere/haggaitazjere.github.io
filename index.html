@@ -4,47 +4,63 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Haggai Jere | Portfolio</title>
-
 <style>
+/* --- General Styles --- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #0f172a;
     color: #e2e8f0;
+    scroll-behavior: smooth;
 }
 
-/* NAVBAR */
+a {
+    text-decoration: none;
+    color: #38bdf8;
+}
+
+h1, h2, h3 { margin: 10px 0; }
+
+/* --- Navbar --- */
 nav {
     background: #020617;
     padding: 15px;
     position: sticky;
     top: 0;
     text-align: center;
+    z-index: 999;
 }
-
 nav a {
-    color: #38bdf8;
     margin: 0 15px;
-    text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
+nav a:hover { color: white; }
 
-nav a:hover {
-    color: white;
-}
-
-/* HEADER */
+/* --- Header --- */
 header {
     text-align: center;
     padding: 60px 20px;
 }
-
-h1 {
-    color: #38bdf8;
-    font-size: 45px;
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    margin-bottom: 20px;
 }
+header .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+header .btn:hover { background: #0ea5e9; color: white; }
 
-/* SECTIONS */
+/* --- Sections --- */
 section {
     padding: 40px 20px;
     max-width: 900px;
@@ -56,12 +72,10 @@ section {
     padding: 20px;
     margin: 15px 0;
     border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-h2 {
-    color: #38bdf8;
-}
-
+/* --- Skills --- */
 .skills span {
     display: inline-block;
     background: #334155;
@@ -70,22 +84,19 @@ h2 {
     border-radius: 8px;
 }
 
-a {
-    color: #38bdf8;
-    text-decoration: none;
-}
-
-/* BUTTON */
-.btn {
+/* --- Projects Buttons --- */
+.project-btn {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
+    margin: 5px 5px 0 0;
+    padding: 8px 12px;
     background: #38bdf8;
     color: black;
-    border-radius: 8px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
+.project-btn:hover { background: #0ea5e9; color: white; }
 
-/* FOOTER */
+/* --- Footer --- */
 footer {
     text-align: center;
     padding: 20px;
@@ -93,7 +104,6 @@ footer {
 }
 </style>
 </head>
-
 <body>
 
 <!-- NAVBAR -->
@@ -107,9 +117,12 @@ footer {
 
 <!-- HEADER -->
 <header id="home">
+    <img src="https://via.placeholder.com/150" alt="Profile Picture">
     <h1>Haggai Jere 👋</h1>
     <p>Software Engineer | Java | Android Developer</p>
+    <p>I build applications with clean UI and strong functionality.</p>
     <a href="#projects" class="btn">View My Work</a>
+    <a href="HaggaiJereCV.pdf" class="btn" download>Download CV</a>
 </header>
 
 <!-- ABOUT -->
@@ -117,8 +130,9 @@ footer {
     <h2>👨‍💻 About Me</h2>
     <div class="card">
         <p>
-            I am a passionate Software Engineer specializing in Java and Android development.
-            I build systems that solve real-world problems in education and healthcare.
+            Passionate Software Engineer with expertise in Java and Android development. 
+            I create systems that solve real-world problems in education, healthcare, 
+            and mobile technology.
         </p>
     </div>
 </section>
@@ -131,7 +145,8 @@ footer {
         <span>Android</span>
         <span>SQLite</span>
         <span>OOP</span>
-        <span>GitHub</span>
+        <span>Git & GitHub</span>
+        <span>UI/UX Design</span>
     </div>
 </section>
 
@@ -141,19 +156,24 @@ footer {
 
     <div class="card">
         <h3>Twapia Clinic Appointment System</h3>
-        <p>Manages patient appointments using Java.</p>
+        <p>Manages patient appointments using Java and notifications.</p>
+        <a href="#" class="project-btn">View Code</a>
+        <a href="#" class="project-btn">Live Demo</a>
     </div>
 
     <div class="card">
         <h3>Student Performance System</h3>
-        <p>Tracks student academic performance.</p>
+        <p>Tracks and analyzes academic performance of students.</p>
+        <a href="#" class="project-btn">View Code</a>
+        <a href="#" class="project-btn">Live Demo</a>
     </div>
 
     <div class="card">
-        <h3>Android Apps</h3>
-        <p>Built multiple mobile apps using SQLite and intents.</p>
+        <h3>Android Mobile Apps</h3>
+        <p>Developed multiple apps using intents, SQLite, and clean UI.</p>
+        <a href="#" class="project-btn">View Code</a>
+        <a href="#" class="project-btn">Live Demo</a>
     </div>
-
 </section>
 
 <!-- CONTACT -->
