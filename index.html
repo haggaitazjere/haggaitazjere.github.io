@@ -4,63 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Haggai Jere | Portfolio</title>
+
 <style>
-/* --- General Styles --- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #0f172a;
     color: #e2e8f0;
-    scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
-    color: #38bdf8;
-}
-
-h1, h2, h3 { margin: 10px 0; }
-
-/* --- Navbar --- */
-nav {
-    background: #020617;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    text-align: center;
-    z-index: 999;
-}
-nav a {
-    margin: 0 15px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-nav a:hover { color: white; }
-
-/* --- Header --- */
 header {
     text-align: center;
     padding: 60px 20px;
 }
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #38bdf8;
-    margin-bottom: 20px;
-}
-header .btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 15px;
-    background: #38bdf8;
-    color: black;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-header .btn:hover { background: #0ea5e9; color: white; }
 
-/* --- Sections --- */
+h1 {
+    color: #38bdf8;
+    font-size: 45px;
+}
+
 section {
     padding: 40px 20px;
     max-width: 900px;
@@ -72,10 +34,12 @@ section {
     padding: 20px;
     margin: 15px 0;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-/* --- Skills --- */
+h2 {
+    color: #38bdf8;
+}
+
 .skills span {
     display: inline-block;
     background: #334155;
@@ -84,19 +48,11 @@ section {
     border-radius: 8px;
 }
 
-/* --- Projects Buttons --- */
-.project-btn {
-    display: inline-block;
-    margin: 5px 5px 0 0;
-    padding: 8px 12px;
-    background: #38bdf8;
-    color: black;
-    border-radius: 6px;
-    transition: 0.3s;
+a {
+    color: #38bdf8;
+    text-decoration: none;
 }
-.project-btn:hover { background: #0ea5e9; color: white; }
 
-/* --- Footer --- */
 footer {
     text-align: center;
     padding: 20px;
@@ -104,80 +60,67 @@ footer {
 }
 </style>
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<!-- HEADER -->
-<header id="home">
-    <img src="https://via.placeholder.com/150" alt="Profile Picture">
+<header>
     <h1>Haggai Jere 👋</h1>
     <p>Software Engineer | Java | Android Developer</p>
-    <p>I build applications with clean UI and strong functionality.</p>
-    <a href="#projects" class="btn">View My Work</a>
-    <a href="HaggaiJereCV.pdf" class="btn" download>Download CV</a>
+    <p>I build mobile and desktop applications with clean design and strong functionality.</p>
 </header>
 
-<!-- ABOUT -->
-<section id="about">
+<section>
     <h2>👨‍💻 About Me</h2>
     <div class="card">
         <p>
-            Passionate Software Engineer with expertise in Java and Android development. 
-            I create systems that solve real-world problems in education, healthcare, 
-            and mobile technology.
+            I am a passionate Software Engineer with experience in Java and Android development.
+            I enjoy building systems that solve real-world problems such as student management
+            and healthcare appointment scheduling.
         </p>
     </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
+<section>
     <h2>🛠 Skills</h2>
     <div class="card skills">
         <span>Java</span>
-        <span>Android</span>
+        <span>Android Development</span>
         <span>SQLite</span>
+        <span>Database Design</span>
         <span>OOP</span>
         <span>Git & GitHub</span>
-        <span>UI/UX Design</span>
     </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
+<section>
     <h2>🚀 Projects</h2>
 
     <div class="card">
         <h3>Twapia Clinic Appointment System</h3>
-        <p>Manages patient appointments using Java and notifications.</p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
+        <p>
+            A Java-based application that allows patients to schedule appointments efficiently.
+            Includes time management, patient tracking, and system notifications.
+        </p>
     </div>
 
     <div class="card">
         <h3>Student Performance System</h3>
-        <p>Tracks and analyzes academic performance of students.</p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
+        <p>
+            A system designed to track and analyze student academic performance using structured data.
+        </p>
     </div>
 
     <div class="card">
         <h3>Android Mobile Apps</h3>
-        <p>Developed multiple apps using intents, SQLite, and clean UI.</p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
+        <p>
+            Developed multiple Android applications using intents, activities, SQLite database,
+            and user-friendly interfaces.
+        </p>
     </div>
+
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
+<section>
     <h2>📞 Contact</h2>
     <div class="card">
         <p>Email: your-email@example.com</p>
@@ -185,9 +128,8 @@ footer {
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    © 2026 Haggai Jere | Portfolio
+    © 2026 Haggai Jere | Professional Portfolio
 </footer>
 
 </body>
