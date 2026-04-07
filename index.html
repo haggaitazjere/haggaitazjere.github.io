@@ -13,8 +13,6 @@ body {
     color: #e2e8f0;
     scroll-behavior: smooth;
 }
-
-/* --- Navbar --- */
 nav {
     background: #020617;
     padding: 15px;
@@ -30,90 +28,21 @@ nav a {
     text-decoration: none;
     transition: 0.3s;
 }
-nav a:hover {
-    color: white;
-}
-
-/* --- Header --- */
-header {
-    text-align: center;
-    padding: 60px 20px;
-}
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #38bdf8;
-    margin-bottom: 20px;
-}
+nav a:hover { color: white; }
+header { text-align: center; padding: 60px 20px; }
+header img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid #38bdf8; margin-bottom: 20px; }
 header .btn {
-    display: inline-block;
-    margin: 10px 10px 0 0;
-    padding: 10px 15px;
-    background: #38bdf8;
-    color: black;
-    border-radius: 8px;
-    transition: 0.3s;
-    cursor: pointer;
-    text-decoration: none;
+    display: inline-block; margin: 10px 10px 0 0; padding: 10px 15px;
+    background: #38bdf8; color: black; border-radius: 8px; transition: 0.3s; cursor: pointer; text-decoration: none;
 }
-header .btn:hover {
-    background: #0ea5e9;
-    color: white;
-}
-
-/* --- Sections --- */
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-.card {
-    background: #1e293b;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-/* --- Headings --- */
-h1, h2, h3 {
-    margin: 10px 0;
-}
-h1 { color: #38bdf8; }
-h2 { color: #38bdf8; }
-
-/* --- Skills --- */
-.skills span {
-    display: inline-block;
-    background: #334155;
-    padding: 8px 12px;
-    margin: 5px;
-    border-radius: 8px;
-}
-
-/* --- Project Buttons --- */
-.project-btn {
-    display: inline-block;
-    margin: 5px 5px 0 0;
-    padding: 8px 12px;
-    background: #38bdf8;
-    color: black;
-    border-radius: 6px;
-    transition: 0.3s;
-    text-decoration: none;
-}
-.project-btn:hover {
-    background: #0ea5e9;
-    color: white;
-}
-
-/* --- Footer --- */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #94a3b8;
-}
+header .btn:hover { background: #0ea5e9; color: white; }
+section { padding: 40px 20px; max-width: 900px; margin: auto; }
+.card { background: #1e293b; padding: 20px; margin: 15px 0; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
+h1, h2, h3 { margin: 10px 0; } h1, h2 { color: #38bdf8; }
+.skills span { display: inline-block; background: #334155; padding: 8px 12px; margin: 5px; border-radius: 8px; }
+.project-btn { display: inline-block; margin: 5px 5px 0 0; padding: 8px 12px; background: #38bdf8; color: black; border-radius: 6px; transition: 0.3s; text-decoration: none; }
+.project-btn:hover { background: #0ea5e9; color: white; }
+footer { text-align: center; padding: 20px; color: #94a3b8; }
 </style>
 </head>
 <body>
@@ -135,7 +64,8 @@ footer {
     <p>Build mobile and Web applications with reliable design and strong functionality.</p>
     <a href="#projects" class="btn">View My Work</a>
     <a href="Haggai Jere CV.pdf" class="btn" download>Download CV</a>
-    <a href="#" class="btn" id="downloadLetterBtn">Download Letter</a>
+    <a href="#" class="btn" id="downloadSchoolLetter">Download School Letter</a>
+    <a href="#" class="btn" id="downloadLetter">Download Letter</a>
 </header>
 
 <!-- ABOUT -->
@@ -174,46 +104,32 @@ footer {
         <h3>Kafubu Water & Sanitation Report Management System</h3>
         <p>
             A web-based application that promotes better communication, tracks reports, and provides quick feedback,
-            real-time notification, GPS mapping.
-            PHP-MySQL
+            real-time notification, GPS mapping. PHP-MySQL
         </p>
         <a href="#" class="project-btn">View Code</a>
         <a href="#" class="project-btn">Live Demo</a>
     </div>
     <div class="card">
         <h3>Auther Davison Children Hospital Help Desk</h3>
-        <p>
-            A Web-based system for Customer Care and Support IT Services.
-            PHP-MySQL.
-        </p>
+        <p>A Web-based system for Customer Care and Support IT Services. PHP-MySQL.</p>
         <a href="#" class="project-btn">View Code</a>
         <a href="#" class="project-btn">Live Demo</a>
     </div>
     <div class="card">
         <h3>Twapia Clinic Appointment System</h3>
-        <p>
-            A Java-based application that allows patients to schedule appointments efficiently.
-            Includes time management, patient tracking, and system notifications.
-        </p>
+        <p>A Java-based application that allows patients to schedule appointments efficiently. Includes time management, patient tracking, and system notifications.</p>
         <a href="#" class="project-btn">View Code</a>
         <a href="#" class="project-btn">Live Demo</a>
     </div>
-
     <div class="card">
         <h3>Student Performance System</h3>
-        <p>
-            A system designed to track and analyze student academic performance using structured data.
-        </p>
+        <p>A system designed to track and analyze student academic performance using structured data.</p>
         <a href="#" class="project-btn">View Code</a>
         <a href="#" class="project-btn">Live Demo</a>
     </div>
-
     <div class="card">
         <h3>Android Mobile Apps</h3>
-        <p>
-            Developed multiple Android applications using intents, activities, SQLite database,
-            and user-friendly interfaces.
-        </p>
+        <p>Developed multiple Android applications using intents, activities, SQLite database, and user-friendly interfaces.</p>
         <a href="#" class="project-btn">View Code</a>
         <a href="#" class="project-btn">Live Demo</a>
     </div>
@@ -233,17 +149,26 @@ footer {
     © 2026 Haggai Jere | Professional Portfolio
 </footer>
 
-<!-- --- Script for Confirmed Letter Download --- -->
+<!-- --- Script for Password Protected Downloads --- -->
 <script>
-    document.getElementById('downloadLetterBtn').addEventListener('click', function(e){
-        e.preventDefault(); // prevent direct download
-        let password = prompt("Enter the secret code to download this letter:");
-        if(password === "82942424"){ // replace with your own secret code
-            window.location.href = "Haggai jere Letter.pdf"; // replace with your actual letter file
-        } else {
-            alert("Access denied. confirm To Haggai Jere The code Before Downloading the letter.");
-        }
-    });
+function passwordProtectedDownload(fileName, passwordCode) {
+    let entered = prompt("Enter the secret code to download this file:");
+    if (entered === passwordCode) {
+        window.location.href = fileName;
+    } else {
+        alert("Access denied. Please confirm the correct code.");
+    }
+}
+
+document.getElementById('downloadSchoolLetter').addEventListener('click', function(e){
+    e.preventDefault();
+    passwordProtectedDownload("SchoolLetter.pdf", "School123"); // school letter password
+});
+
+document.getElementById('downloadLetter').addEventListener('click', function(e){
+    e.preventDefault();
+    passwordProtectedDownload("HaggaiLetter.pdf", "Letter123"); // your other letter password
+});
 </script>
 
 </body>
