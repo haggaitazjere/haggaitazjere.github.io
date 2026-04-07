@@ -54,6 +54,8 @@ header .btn {
     color: black;
     border-radius: 8px;
     transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
 }
 header .btn:hover {
     background: #0ea5e9;
@@ -99,6 +101,7 @@ h2 { color: #38bdf8; }
     color: black;
     border-radius: 6px;
     transition: 0.3s;
+    text-decoration: none;
 }
 .project-btn:hover {
     background: #0ea5e9;
@@ -129,9 +132,10 @@ footer {
     <img src="profile.jpeg" alt="Haggai Jere Profile Picture">
     <h1>Haggai Jere 👋</h1>
     <p>Software Engineer | Java | Android Developer</p>
-    <p> Build mobile and Web applications with Reliable design and strong functionality.</p>
+    <p>Build mobile and Web applications with reliable design and strong functionality.</p>
     <a href="#projects" class="btn">View My Work</a>
     <a href="Haggai Jere CV.pdf" class="btn" download>Download CV</a>
+    <a href="#" class="btn" id="downloadLetterBtn">Download Letter</a>
 </header>
 
 <!-- ABOUT -->
@@ -172,7 +176,6 @@ footer {
             A web-based application that promotes better communication, tracks reports, and provides quick feedback,
             real-time notification, GPS mapping.
             PHP-MySQL
-            
         </p>
         <a href="#" class="project-btn">View Code</a>
         <a href="#" class="project-btn">Live Demo</a>
@@ -229,6 +232,19 @@ footer {
 <footer>
     © 2026 Haggai Jere | Professional Portfolio
 </footer>
+
+<!-- --- Script for Confirmed Letter Download --- -->
+<script>
+    document.getElementById('downloadLetterBtn').addEventListener('click', function(e){
+        e.preventDefault(); // prevent direct download
+        let password = prompt("Enter the secret code to download this letter:");
+        if(password === "Haggai123"){ // replace with your own secret code
+            window.location.href = "Haggai_Jere_Letter.pdf"; // replace with your actual letter file
+        } else {
+            alert("Access denied. You cannot download this letter without confirmation.");
+        }
+    });
+</script>
 
 </body>
 </html>
