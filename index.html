@@ -3,352 +3,397 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Haggai Jere | Portfolio</title>
+
+<title>Haggai Jere | Software Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-/* --- General Styles --- */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
-    scroll-behavior: smooth;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
-nav {
-    background: #020617;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    text-align: center;
-    z-index: 999;
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:#e2e8f0;
+scroll-behavior:smooth;
 }
-nav a {
-    margin: 0 15px;
-    font-weight: bold;
-    color: #38bdf8;
-    text-decoration: none;
-    transition: 0.3s;
+
+/* NAVBAR */
+
+nav{
+background:#020617;
+padding:18px;
+position:sticky;
+top:0;
+z-index:999;
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.4);
 }
-nav a:hover { color: white; }
-header { text-align: center; padding: 60px 20px; }
-header img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid #38bdf8; margin-bottom: 20px; }
-header .btn {
-    display: inline-block; margin: 10px 10px 0 0; padding: 10px 15px;
-    background: #38bdf8; color: black; border-radius: 8px; transition: 0.3s; cursor: pointer; text-decoration: none;
+
+nav a{
+margin:0 18px;
+color:#38bdf8;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
 }
-header .btn:hover { background: #0ea5e9; color: white; }
-section { padding: 40px 20px; max-width: 900px; margin: auto; }
-.card { background: #1e293b; padding: 20px; margin: 15px 0; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
-h1, h2, h3 { margin: 10px 0; } h1, h2 { color: #38bdf8; }
-.skills span { display: inline-block; background: #334155; padding: 8px 12px; margin: 5px; border-radius: 8px; }
-.project-btn { display: inline-block; margin: 5px 5px 0 0; padding: 8px 12px; background: #38bdf8; color: black; border-radius: 6px; transition: 0.3s; text-decoration: none; }
-.project-btn:hover { background: #0ea5e9; color: white; }
-footer { text-align: center; padding: 20px; color: #94a3b8; }
+
+nav a:hover{
+color:white;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:80px 20px;
+}
+
+header img{
+width:150px;
+height:150px;
+border-radius:50%;
+border:4px solid #38bdf8;
+margin-bottom:20px;
+}
+
+header h1{
+font-size:36px;
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+header p{
+margin-bottom:10px;
+color:#cbd5f5;
+}
+
+.btn{
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+border-radius:8px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#0ea5e9;
+color:white;
+transform:translateY(-2px);
+}
+
+/* SECTIONS */
+
+section{
+max-width:1000px;
+margin:auto;
+padding:50px 20px;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#38bdf8;
+}
+
+/* CARDS */
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+margin:20px 0;
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* SKILLS */
+
+.skills span{
+display:inline-block;
+background:#334155;
+padding:8px 14px;
+margin:6px;
+border-radius:8px;
+}
+
+/* PROJECT BUTTON */
+
+.project-btn{
+display:inline-block;
+margin-top:10px;
+margin-right:8px;
+padding:8px 14px;
+background:#38bdf8;
+color:black;
+border-radius:6px;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+.project-btn:hover{
+background:#0ea5e9;
+color:white;
+}
+
+/* CONTACT */
+
+.contact p{
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+color:#94a3b8;
+border-top:1px solid #334155;
+margin-top:40px;
+}
+
 </style>
 </head>
+
 <body>
 
 <!-- NAVBAR -->
+
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <!-- HEADER -->
+
 <header id="home">
-    <img src="profile.jpeg" alt="Haggai Jere Profile Picture">
-    <h1>Haggai Jere 👋</h1>
-    <p>Software Engineer | Java | Android Developer</p>
-    <p>Build mobile and Web applications with reliable design and strong functionality.</p>
-    <a href="#projects" class="btn">View My Work</a>
-    <a href="Haggai Jere CV.pdf" class="btn" download>Download CV</a>
-    <a href="#" class="btn" id="downloadSchoolLetter">Download School Letter</a>
-    <a href="#" class="btn" id="downloadLetter">Download Letter</a>
+
+<img src="profile.jpeg">
+
+<h1>Haggai Jere</h1>
+
+<p>Software Engineer | Java | Android Developer</p>
+
+<p>Building reliable mobile and web applications that solve real-world problems.</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+<a href="Haggai Jere CV.pdf" class="btn" download>Download CV</a>
+
+<a href="#" class="btn" id="downloadSchoolLetter">School Letter</a>
+
+<a href="#" class="btn" id="downloadLetter">Medical Letter</a>
+
 </header>
 
 <!-- ABOUT -->
+
 <section id="about">
-    <h2>👨‍💻 About Me</h2>
-    <div class="card">
-        <p>
-           "A results-driven Full Stack Software Engineer passionate about building
-            reliable and scalable systems that solve real-world problems. 
-            Experienced in designing and implementing solutions for students 
-            management and healthcare appointment scheduling, delivering both 
-            efficiency and an exceptional user experience."
-        </p>
-    </div>
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<p>
+
+A passionate Full Stack Software Engineer who enjoys building scalable and reliable systems that solve real-world problems.
+
+Experienced in developing applications for student management, healthcare appointment scheduling, and web-based service platforms using modern programming principles and clean system architecture.
+
+</p>
+
+</div>
+
 </section>
 
 <!-- SKILLS -->
+
 <section id="skills">
-    <h2>🛠 Skills</h2>
-    <div class="card skills">
-        <span>Java</span>
-        <span>Android Development</span>
-        <span>SQLite</span>
-        <span>Database Design</span>
-        <span>OOP</span>
-        <span>Git & GitHub</span>
-        <span>C++</span>
-        <span>PHP</span>
-        <span>MySQL</span>
-    </div>
+
+<h2>Technical Skills</h2>
+
+<div class="card skills">
+
+<span>Java</span>
+<span>Android Development</span>
+<span>SQLite</span>
+<span>Database Design</span>
+<span>Object Oriented Programming</span>
+<span>Git & GitHub</span>
+<span>C++</span>
+<span>PHP</span>
+<span>MySQL</span>
+
+</div>
+
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
-    <h2>🚀 Projects</h2>
 
-    <div class="card">
-        <h3>Kafubu Water & Sanitation Report Management System</h3>
-        <p>
-            A web-based application that promotes better communication, tracks reports, and provides quick feedback,
-            real-time notification, GPS mapping. PHP-MySQL
-        </p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
-    </div>
-    <div class="card">
-        <h3>Auther Davison Children Hospital Help Desk</h3>
-        <p>A Web-based system for Customer Care and Support IT Services. PHP-MySQL.</p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
-    </div>
-    <div class="card">
-        <h3>Twapia Clinic Appointment System</h3>
-        <p>A Java-based application that allows patients to schedule appointments efficiently. Includes time management, patient tracking, and system notifications.</p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
-    </div>
-    <div class="card">
-        <h3>Student Performance System</h3>
-        <p>A system designed to track and analyze student academic performance using structured data.</p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
-    </div>
-    <div class="card">
-        <h3>Android Mobile Apps</h3>
-        <p>Developed multiple Android applications using intents, activities, SQLite database, and user-friendly interfaces.</p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
-    </div>
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="card">
+
+<h3>Kafubu Water & Sanitation Report System</h3>
+
+<p>
+
+Web platform that allows citizens to submit reports, track issues, and receive feedback. Includes notifications and GPS mapping.
+
+</p>
+
+<a href="#" class="project-btn">View Code</a>
+<a href="#" class="project-btn">Live Demo</a>
+
+</div>
+
+<div class="card">
+
+<h3>Arthur Davison Children's Hospital Help Desk</h3>
+
+<p>
+
+A web-based IT customer support and service request management system developed using PHP and MySQL.
+
+</p>
+
+<a href="#" class="project-btn">View Code</a>
+<a href="#" class="project-btn">Live Demo</a>
+
+</div>
+
+<div class="card">
+
+<h3>Twapia Clinic Appointment System</h3>
+
+<p>
+
+Java application designed to help patients schedule clinic appointments efficiently with organized time tracking.
+
+</p>
+
+<a href="#" class="project-btn">View Code</a>
+<a href="#" class="project-btn">Live Demo</a>
+
+</div>
+
+<div class="card">
+
+<h3>Student Performance Tracking System</h3>
+
+<p>
+
+Academic performance management system designed to analyze and manage student results effectively.
+
+</p>
+
+<a href="#" class="project-btn">View Code</a>
+<a href="#" class="project-btn">Live Demo</a>
+
+</div>
+
+<div class="card">
+
+<h3>Android Mobile Applications</h3>
+
+<p>
+
+Multiple Android apps demonstrating activities, intents, SQLite database usage, and user-friendly mobile interfaces.
+
+</p>
+
+<a href="#" class="project-btn">View Code</a>
+<a href="#" class="project-btn">Live Demo</a>
+
+</div>
+
 </section>
 
 <!-- CONTACT -->
+
 <section id="contact">
-    <h2>📞 Contact: +26 0963930091 / +26 0971404890</h2>
-    <div class="card">
-        <p>Email: haggaitazjere@gmail.com</p>
-        <p><a href="https://github.com/haggaitazjere" target="_blank">GitHub Profile</a></p>
-    </div>
+
+<h2>Contact</h2>
+
+<div class="card contact">
+
+<p>📞 +260 963930091 / +260 971404890</p>
+
+<p>📧 haggaitazjere@gmail.com</p>
+
+<p>
+<a href="https://github.com/haggaitazjere" target="_blank">
+GitHub: github.com/haggaitazjere
+</a>
+</p>
+
+</div>
+
 </section>
 
 <!-- FOOTER -->
+
 <footer>
-    © 2026 Haggai Jere | Professional Portfolio
+
+© 2026 Haggai Jere | Software Engineer Portfolio
+
 </footer>
 
-<!-- --- Script for Password Protected Downloads --- -->
+<!-- PASSWORD DOWNLOAD SCRIPT -->
+
 <script>
-function passwordProtectedDownload(fileName, passwordCode) {
-    let entered = prompt("Enter the secret code to download this file:");
-    if (entered === passwordCode) {
-        window.location.href = fileName;
-    } else {
-        alert("Access denied. Please confirm the correct code To Haggai Jere.");
-    }
+
+function passwordProtectedDownload(fileName,password){
+
+let entered=prompt("Enter access code:");
+
+if(entered===password){
+
+window.location.href=fileName;
+
+}else{
+
+alert("Access denied. Please confirm the correct code.");
+
 }
 
-document.getElementById('downloadSchoolLetter').addEventListener('click', function(e){
-    e.preventDefault();
-    passwordProtectedDownload("Haggai jere Letter.pdf", "82942424"); // school letter password
+}
+
+document.getElementById("downloadSchoolLetter").addEventListener("click",function(e){
+
+e.preventDefault();
+
+passwordProtectedDownload("Haggai jere Letter.pdf","82942424");
+
 });
 
-document.getElementById('downloadLetter').addEventListener('click', function(e){
-    e.preventDefault();
-    passwordProtectedDownload("The Senior Medical Superintendent letter.pdf", "82942424"); // your other letter password
-});
-</script>
+document.getElementById("downloadLetter").addEventListener("click",function(e){
 
-</body>
-</html>
+e.preventDefault();
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Haggai Jere | Portfolio</title>
-<style>
-/* --- General Styles --- */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #03f023;
-    color: #e2e8f0;
-    scroll-behavior: smooth;
-}
-nav {
-    background: #51ff00;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    text-align: center;
-    z-index: 999;
-}
-nav a {
-    margin: 0 15px;
-    font-weight: bold;
-    color: #38bdf8;
-    text-decoration: none;
-    transition: 0.3s;
-}
-nav a:hover { color: white; }
-header { text-align: center; padding: 60px 20px; }
-header img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid #38bdf8; margin-bottom: 20px; }
-header .btn {
-    display: inline-block; margin: 10px 10px 0 0; padding: 10px 15px;
-    background: #38bdf8; color: black; border-radius: 8px; transition: 0.3s; cursor: pointer; text-decoration: none;
-}
-header .btn:hover { background: #0ea5e9; color: white; }
-section { padding: 40px 20px; max-width: 900px; margin: auto; }
-.card { background: #1e293b; padding: 20px; margin: 15px 0; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
-h1, h2, h3 { margin: 10px 0; } h1, h2 { color: #38bdf8; }
-.skills span { display: inline-block; background: #334155; padding: 8px 12px; margin: 5px; border-radius: 8px; }
-.project-btn { display: inline-block; margin: 5px 5px 0 0; padding: 8px 12px; background: #38bdf8; color: black; border-radius: 6px; transition: 0.3s; text-decoration: none; }
-.project-btn:hover { background: #0ea5e9; color: white; }
-footer { text-align: center; padding: 20px; color: #94a3b8; }
-</style>
-</head>
-<body>
+passwordProtectedDownload("The Senior Medical Superintendent letter.pdf","82942424");
 
-<!-- NAVBAR -->
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<!-- HEADER -->
-<header id="home">
-    <img src="profile.jpeg" alt="Haggai Jere Profile Picture">
-    <h1>Haggai Jere 👋</h1>
-    <p>Software Engineer | Java | Android Developer</p>
-    <p>Build mobile and Web applications with reliable design and strong functionality.</p>
-    <a href="#projects" class="btn">View My Work</a>
-    <a href="Haggai Jere CV.pdf" class="btn" download>Download CV</a>
-    <a href="#" class="btn" id="downloadSchoolLetter">Download School Letter</a>
-    <a href="#" class="btn" id="downloadLetter">Download Letter</a>
-</header>
-
-<!-- ABOUT -->
-<section id="about">
-    <h2>👨‍💻 About Me</h2>
-    <div class="card">
-        <p>
-           "A results-driven Full Stack Software Engineer passionate about building
-            reliable and scalable systems that solve real-world problems. 
-            Experienced in designing and implementing solutions for students 
-            management and healthcare appointment scheduling, delivering both 
-            efficiency and an exceptional user experience."
-        </p>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-    <h2>🛠 Skills</h2>
-    <div class="card skills">
-        <span>Java</span>
-        <span>Android Development</span>
-        <span>SQLite</span>
-        <span>Database Design</span>
-        <span>OOP</span>
-        <span>Git & GitHub</span>
-        <span>C++</span>
-        <span>PHP</span>
-        <span>MySQL</span>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-    <h2>🚀 Projects</h2>
-
-    <div class="card">
-        <h3>Kafubu Water & Sanitation Report Management System</h3>
-        <p>
-            A web-based application that promotes better communication, tracks reports, and provides quick feedback,
-            real-time notification, GPS mapping. PHP-MySQL
-        </p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
-    </div>
-    <div class="card">
-        <h3>Auther Davison Children Hospital Help Desk</h3>
-        <p>A Web-based system for Customer Care and Support IT Services. PHP-MySQL.</p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
-    </div>
-    <div class="card">
-        <h3>Twapia Clinic Appointment System</h3>
-        <p>A Java-based application that allows patients to schedule appointments efficiently. Includes time management, patient tracking, and system notifications.</p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
-    </div>
-    <div class="card">
-        <h3>Student Performance System</h3>
-        <p>A system designed to track and analyze student academic performance using structured data.</p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
-    </div>
-    <div class="card">
-        <h3>Android Mobile Apps</h3>
-        <p>Developed multiple Android applications using intents, activities, SQLite database, and user-friendly interfaces.</p>
-        <a href="#" class="project-btn">View Code</a>
-        <a href="#" class="project-btn">Live Demo</a>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-    <h2>📞 Contact: +26 0963930091 / +26 0971404890</h2>
-    <div class="card">
-        <p>Email: haggaitazjere@gmail.com</p>
-        <p><a href="https://github.com/haggaitazjere" target="_blank">GitHub Profile</a></p>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    © 2026 Haggai Jere | Professional Portfolio
-</footer>
-
-<!-- --- Script for Password Protected Downloads --- -->
-<script>
-function passwordProtectedDownload(fileName, passwordCode) {
-    let entered = prompt("Enter the secret code to download this file:");
-    if (entered === passwordCode) {
-        window.location.href = fileName;
-    } else {
-        alert("Access denied. Please confirm the correct code To Haggai Jere.");
-    }
-}
-
-document.getElementById('downloadSchoolLetter').addEventListener('click', function(e){
-    e.preventDefault();
-    passwordProtectedDownload("Haggai jere Letter.pdf", "82942424"); // school letter password
 });
 
-document.getElementById('downloadLetter').addEventListener('click', function(e){
-    e.preventDefault();
-    passwordProtectedDownload("The Senior Medical Superintendent letter.pdf", "82942424"); // your other letter password
-});
 </script>
 
 </body>
